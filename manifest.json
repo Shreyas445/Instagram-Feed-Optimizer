@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Cooking Filter",
+    "version": "1.0",
+    "description": "Hides all cooking-related videos from YouTube.",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "host_permissions": ["https://www.youtube.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
